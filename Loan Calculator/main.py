@@ -25,6 +25,8 @@ def main():
                 print("Month {0}: payment is {1}".format(i,dp))
             overpayment = float(net_dp - principal)
             print("Overpayment = {0}".format(overpayment))
+        else:
+            print("Incorrect parameters.")
     elif args.type =="annuity":
         #calculate annuity payment
         if args.principal and args.periods and args.interest:
