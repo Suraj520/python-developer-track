@@ -12,15 +12,15 @@ def main():
     parser.add_argument('--principal')
     args = parser.parse_args()
     if args.type =="diff":
-        if args.principal and args.period and args.interest:
+        if args.principal and args.periods and args.interest:
             principal = int(args.principal)
-            periods = int(args.period)
+            periods = int(args.periods)
             interest= float(args.interest)
-            interest = float(interest/120)
+            interest = float(interest/1200)
             #calculating differential payments
             net_dp =0
-            for i in range(periods):
-                dp = principal/periods + interest * (P - (P*(i-1)/periods))
+            for i in range(1,periods+1):
+                dp = math.ceil(principal / periods + interest * (principal - (principal * (i - 1)) / periods))
                 net_dp+=dp
                 print("Month {0}: payment is {1}".format(i,dp))
             overpayment = float(net_dp - principal)
@@ -32,9 +32,9 @@ def main():
             n = int(args.periods)
             loan_interest = float(args.interest)
             loan_interest = float(loan_interest/1200)
-            a =(loan_principal * ((loan_interest)*math.pow((1+loan_interest),n))/((math.pow((1+loan_interest),n))-1))
-            overpayment = a*n - loan_principal
-            print("Your annuity payment = {0}!".format(math.ceil(a)))
+            a = math.ceil(loan_principal * (loan_interest * math.pow(1 + loan_interest, n)) / (math.pow(1 + loan_interest, n) - 1))
+            overpayment = a * n - loan_principal
+            print("Your annuity payment = {0}!".format(a))
             print("Overpayment = {0}".format(overpayment))
         #calculate loan principal
         elif args.payment and args.interest and args.periods :
@@ -54,6 +54,7 @@ def main():
             loan_interest = float(loan_interest/1200)
             Numerator = (monthly_payment)/(monthly_payment - loan_interest*loan_principal)
             n = (math.log(Numerator,(1+loan_interest)))
+            n = math.ceil(n)
             month = math.ceil(n%12)
             year = int(n//12)
             if month ==12:
