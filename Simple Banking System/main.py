@@ -1,7 +1,8 @@
+#Import statements
 import random
 import _sqlite3
 #Helper functions for calculating checksum via Luhn check and checking validity of a card
-# luhn_check method to find check sum
+#Luhn_check method to find check sum
 def checksum_calculator(card_number):
     #Removing last digit from the card
     card_number = card_number[0:len(card_number)-1]
@@ -32,6 +33,7 @@ def card_validity_checker(card_number):
     else:
         return False
 #Helper function ends here >>>>>>
+
 #Credit Card class starts here >>>>>>>>>>>>>>>>>>>>>>>>>>>>
 #core class of credit card with various operational methods
 class CreditCard:
@@ -83,9 +85,10 @@ class CreditCard:
         flag = self.prompt(self.desired_id)
         return flag
 
-    #Continuos prompt
+    #Continuos prompt method once user is logged in
     def prompt(self,desired_id):
             flag = 0
+            #continue prompt till flag is set to 0 i.e 0 is not pressed.
             while(flag==0):
                 print('''
         1. Balance
@@ -113,7 +116,7 @@ class CreditCard:
                     return flag
 
     #Helper methods post login check
-        #check balance method
+    #check balance method
     def check_balance(self,id):
         self.cur.execute("SELECT balance FROM card WHERE id={0}".format(self.desired_id))
         rows = self.cur.fetchall()
@@ -131,9 +134,9 @@ class CreditCard:
         self.cur.execute("UPDATE card SET balance={0} WHERE id ={1}".format(balance1,self.desired_id))
         self.conn.commit()
         print("Income was added!")
-        self.print()
+        #self.print()
         #displaying tables
-
+    #optional print method to check the contents of the database; Useful while debugging.
     def print(self):
         self.cur.execute('SELECT * FROM card')
         rows = self.cur.fetchall()
@@ -145,20 +148,13 @@ class CreditCard:
         print("Transfer")
         #prompt the user to enter card number
         receiver_account = input("Enter card number:")
-        #fetch sender account by id
-        #self.cur.execute("SELECT number FROM card WHERE id={0}".format(self.desired_id))
-        #rows = self.cur.fetchall()
-        #if len(rows) > 0:
-        #    sender_account= rows[0][0]
-        #else:
-        #    sender_account= 0
+        #fetch sender account, It is the card number of logged in user
         sender_account = self.card
         #sender account fetched till this point
         #fetch sender balance by sender account
         self.cur.execute("SELECT balance FROM card WHERE number={0}".format(sender_account))
         rows = self.cur.fetchone()
         sender_balance= rows[0]
-        #print("Sender_balance",sender_balance)
         #sender balance fetched
         if sender_account == receiver_account:
              print("You can't transfer money to the same account!")
@@ -189,8 +185,7 @@ class CreditCard:
                  self.cur.execute("UPDATE card SET balance={0} WHERE id ={1}".format(amount,reciever_id))
                  self.cur.execute("UPDATE card SET balance={0} WHERE id ={1}".format(amount,self.desired_id))
                  self.conn.commit()
-                 print(reciever_id,self.desired_id)
-                 self.print()
+                 #self.print() #optional debugging by printing the contents of the database.
                  print("Success!")
     #close account method
     def close_account(self):
