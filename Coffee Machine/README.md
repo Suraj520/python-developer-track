@@ -8,3 +8,7 @@ This project works towards simulating the software of a coffee machine which pri
 * Disposable cups
 * Coffee beans
 
+### Execute
+```$ python main.py ```
+
+
