@@ -63,7 +63,7 @@ If the shopkeeper is closing the shop then he can enter the <strong>exit button 
 # Cofee Machine Boots up :::
 
 Write action (buy, fill, take, remaining, exit):
-&gt; remaining
+> remaining
 
 The coffee machine has:
 400 of water
@@ -73,14 +73,14 @@ The coffee machine has:
 $550 of money
 
 Write action (buy, fill, take, remaining, exit):
-&gt; buy
+> buy
 
 What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu:
-&gt; 2
+> 2
 I have enough resources, making you a coffee!
 
 Write action (buy, fill, take, remaining, exit):
-&gt; remaining
+> remaining
 
 The coffee machine has:
 50 of water
@@ -90,26 +90,26 @@ The coffee machine has:
 $557 of money
 
 Write action (buy, fill, take, remaining, exit):
-&gt; buy
+> buy
 
 What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu:
-&gt; 2
+> 2
 Sorry, not enough water!
 
 Write action (buy, fill, take, remaining, exit):
-&gt; fill
+> fill
 
 Write how many ml of water do you want to add:
-&gt; 1000
+> 1000
 Write how many ml of milk do you want to add:
-&gt; 0
+> 0
 Write how many grams of coffee beans do you want to add:
-&gt; 0
+> 0
 Write how many disposable cups of coffee do you want to add:
-&gt; 0
+> 0
 
 Write action (buy, fill, take, remaining, exit):
-&gt; remaining
+> remaining
 
 The coffee machine has:
 1050 of water
@@ -119,14 +119,14 @@ The coffee machine has:
 $557 of money
 
 Write action (buy, fill, take, remaining, exit):
-&gt; buy
+> buy
 
 What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu:
-&gt; 2
+> 2
 I have enough resources, making you a coffee!
 
 Write action (buy, fill, take, remaining, exit):
-&gt; remaining
+> remaining
 
 The coffee machine has:
 700 of water
@@ -136,12 +136,12 @@ The coffee machine has:
 $564 of money
 
 Write action (buy, fill, take, remaining, exit):
-&gt; take
+> take
 
 I gave you $564
 
 Write action (buy, fill, take, remaining, exit):
-&gt; remaining
+> remaining
 
 The coffee machine has:
 700 of water
@@ -151,4 +151,5 @@ The coffee machine has:
 0 of money
 
 Write action (buy, fill, take, remaining, exit):
-&gt; exit</code></pre>
+> exit
+</code></pre>
