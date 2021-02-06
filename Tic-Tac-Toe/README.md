@@ -3,6 +3,9 @@
     Link to the Project's Problem Statement: https://hyperskill.org/projects/73
 
 Everybody remembers this paper-and-pencil game from childhood: Tic-Tac-Toe, also known as Noughts and crosses or Xs and Os. A single mistake usually costs you the game, but thankfully it is simple enough that most players discover the best strategy quickly. 
+### Execute Command
+```cd Script && python main.py```
+
 ### About the Software version
 This simulates a tic-tac-toe game where iteratively two users play the game to have the outcome of Win, Loss or Draw.
 ### ChatBot Session
