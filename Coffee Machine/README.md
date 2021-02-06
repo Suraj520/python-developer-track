@@ -9,7 +9,7 @@ This project works towards simulating the software of a coffee machine which pri
 * Coffee beans
 
 ### Execute
-```$ python main.py ```
+```$ cd Script && python main.py ```
 
 ### About the Software
 The coffee machine will have limited amount of water, milk, coffee beans and disposable cups along with a logic to track the amount of money earned.
