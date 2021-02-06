@@ -2,7 +2,7 @@
 > > This is the implementation of the Project- Hangman on Python Developer Track on Github
     Link to the Project's Problem Statement: https://hyperskill.org/projects/69/
 
-This project works towards simulating <a src="https://en.wikipedia.org/wiki/Hangman_(game)">The Hangman game </a> where the computer starts the game with a random word for the user and the user has to predict the word letter by letter. 
+This project works towards simulating <a target="_blank" href="https://en.wikipedia.org/wiki/Hangman_(game)">The Hangman Game</a> where the computer starts the game with a random word for the user and the user has to predict the word letter by letter. 
 
 The end outcome of the game is either a win that let's the user survive or a lose where the user will be hanged!
 
