@@ -20,13 +20,12 @@ The coffee machine allows user to perform one of the following actions upon rebo
 * Check Remaining
 
 - Pricing and Ingredients for brewing various coffee variants
-> The Coffee machine serves three primary variants to the user commonly known as Espresso, Latte and Capuccino.
->> Each of the variants of coffee require the following amount of ingredients:
+  The Coffee machine serves three primary variants to the user commonly known as Espresso, Latte and Capuccino.
+  Each of the variants of coffee require the following amount of ingredients:
     * Espresso: 250 ml of water and 16 g of coffee beans. Cost: $4.
     * Latte: 350 ml of water, 75 ml of milk and 20 g of coffee beans. Cost: $7.
     * Espresso: 200 ml of water, 100 ml of milk and 12 g of coffee. Cost: $6.
 
-> Once the user enters the desired option mapped to one of the aforementioned actions, The coffee machine further invokes a series of nested actions through user prompt to complete it.
-
-> > The nested operations are described below
+- Once the user enters the desired option mapped to one of the aforementioned actions, The coffee machine further invokes a series of nested actions through user prompt to complete it.
+ The nested operations are described below
     - If the user enters buy coffee in the prompt
