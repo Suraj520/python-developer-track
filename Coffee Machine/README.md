@@ -19,7 +19,7 @@ The coffee machine allows user to perform one of the following actions upon rebo
 * Take the money
 * Check Remaining
 
-- Pricing and Ingredients for brewing various coffee variants
+#### Pricing and Ingredients for brewing various coffee variants
   The Coffee machine serves three primary variants to the user commonly known as Espresso, Latte and Capuccino.
   Each of the variants of coffee require the following amount of ingredients for brewing one cup charged as per the corresponding amount:
     * Espresso: 250 ml of water and 16 g of coffee beans. Cost: $4.
