@@ -29,12 +29,126 @@ Each of the variants of coffee require the following amount of ingredients for b
 * Espresso: 200 ml of water, 100 ml of milk and 12 g of coffee. Cost: $6.
 
 ##### Nested actions corresponding to each action of the user
-Once the user enters the desired option mapped to one of the aforementioned actions, The coffee machine further invokes a series of nested actions through user prompt to complete it.
-- The nested operations are described below 
-  * If the user enters buy coffee in the prompt, then a prompt appears waiting for user to enter the variant of coffee to be brewed i.e
-    - Espresso.
-    - Latte.
-    - Cappucino.
-  Depending upon the choice made, the coffee machine brews the coffee variant for the user and displays the one of the following prompt depending upon the amount of ingredients in stock inside the machine.
-      ``` I have enough resources, making you a coffee!```
-      or ```Sorry, not enough {Ingredient Name}! :: Where Ingredient can be water, coffee, disposable cup or milk```
+Once the user enters the desired option mapped to one of the aforementioned actions, The coffee machine further invokes a series of nested actions through user prompt to complete it.<br><br>
+The nested operations are described below 
+If the user enters buy coffee in the prompt, then a prompt appears waiting for user to enter the variant of coffee to be brewed i.e 
+<ul>
+<li>Espresso</li>
+<li>Latte</li>
+<li>Cappucino</li>
+</ul>
+
+> Depending upon the choice made, the coffee machine brews the coffee variant for the user and displays the one of the following prompt depending upon the amount of ingredients in stock inside the machine.
+      
+``` I have enough resources, making you a coffee!```
+<br>or ```Sorry, not enough {Ingredient Name}! :: Where Ingredient can be water, coffee, disposable cup or milk```
+<p>If the coffee machine doesn't have enough ingredients then the <strong> user can either check for the remaining ingredients using the remaining action and brew an according variant or inform the shopkeeper to fill it with the ingredients which is done by fill action of the coffee machine </strong> </p>
+
+If the shopkeeper enters the <strong>fill button </strong> then he is prompte to enter the quantity of each ingredient iteratively that he wishes to update as shown below.
+<ul>
+<li>Write how many ml of water do you want to add:</li>
+<li>Write how many ml of milk do you want to add:</li>
+<li>Write how many grams of coffee beans do you want to add:</li>
+<li>Write how many disposable cups of coffee do you want to add:</li>
+</ul>
+
+If the shopkeeper desires to take out the money, he will enter the <strong>take button </strong> from the main prompt and collect the money, thus resetting the amount of money to 0
+
+If the shopkeeper is closing the shop then he can enter the <strong>exit button </strong> and shutdown the coffee machine.
+
+## Coffee Machine Session
+```The similar prompt can be expected upon entering the same input as described below. User can however enter any choice to validate the working of the software as long as the input is in bounds of the software```
+
+<pre><code class="language-no-highlight">
+# Cofee Machine Boots up :::
+
+Write action (buy, fill, take, remaining, exit):
+&gt; remaining
+
+The coffee machine has:
+400 of water
+540 of milk
+120 of coffee beans
+9 of disposable cups
+$550 of money
+
+Write action (buy, fill, take, remaining, exit):
+&gt; buy
+
+What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu:
+&gt; 2
+I have enough resources, making you a coffee!
+
+Write action (buy, fill, take, remaining, exit):
+&gt; remaining
+
+The coffee machine has:
+50 of water
+465 of milk
+100 of coffee beans
+8 of disposable cups
+$557 of money
+
+Write action (buy, fill, take, remaining, exit):
+&gt; buy
+
+What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu:
+&gt; 2
+Sorry, not enough water!
+
+Write action (buy, fill, take, remaining, exit):
+&gt; fill
+
+Write how many ml of water do you want to add:
+&gt; 1000
+Write how many ml of milk do you want to add:
+&gt; 0
+Write how many grams of coffee beans do you want to add:
+&gt; 0
+Write how many disposable cups of coffee do you want to add:
+&gt; 0
+
+Write action (buy, fill, take, remaining, exit):
+&gt; remaining
+
+The coffee machine has:
+1050 of water
+465 of milk
+100 of coffee beans
+8 of disposable cups
+$557 of money
+
+Write action (buy, fill, take, remaining, exit):
+&gt; buy
+
+What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu:
+&gt; 2
+I have enough resources, making you a coffee!
+
+Write action (buy, fill, take, remaining, exit):
+&gt; remaining
+
+The coffee machine has:
+700 of water
+390 of milk
+80 of coffee beans
+7 of disposable cups
+$564 of money
+
+Write action (buy, fill, take, remaining, exit):
+&gt; take
+
+I gave you $564
+
+Write action (buy, fill, take, remaining, exit):
+&gt; remaining
+
+The coffee machine has:
+700 of water
+390 of milk
+80 of coffee beans
+7 of disposable cups
+0 of money
+
+Write action (buy, fill, take, remaining, exit):
+&gt; exit</code></pre>
