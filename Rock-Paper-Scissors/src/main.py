@@ -36,32 +36,44 @@ class Game:
             for i in range(len(entry_list)):
                 if user in entry_list[i]:
                     score = int(list(entry_list[i].split())[1])
-            return score
-        elif operation =="append":
-            pass
+                    return score
+        return score
+
+    def generate_valid_inputs(self,*args):
+        if args[0]=="":
+            valid_inputs = ["rock","paper","scissors"]
+        else:
+            valid_inputs=[]
+            valid_inputs.append(args[0])
+        return valid_inputs
+
+        # elif operation =="append":
+        #     pass
 
 
 #set of valid inputs for the game
-valid_inputs = ["rock","paper","scissors"]
+
+#valid_inputs = ["rock","paper","scissors"]
 #file name
 file_name = "rating.txt"
 #prompt for user __name__
 username = input("Enter your name:")
-print("Hello. {0}".format(username))
+print("Hello, {0}".format(username))
 #initialising the class
 RCP = Game(username,file_name)
 #now fetch the score
 score = RCP.file_operation("read",username)
+#now asking user to create a valid input
+valid_inputs = RCP.generate_valid_inputs(input())
 while(True):
     choice = input()
     if choice == "!exit":
         print("Bye!")
         break
+    elif choice == "!rating":
+        print("Your rating: {0}".format(score))
     elif choice not in valid_inputs:
         print("Invalid input")
-    elif choice == "!rating":
-        #print score
-        print("Your rating: {0}".format(score))
     else:
         score = RCP.predict_outcome(choice,score)
 
