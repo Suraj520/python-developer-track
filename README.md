@@ -1,5 +1,5 @@
 # About the Repo
-![Work in Progress](Temp_MediaDirectory/Summary.png)
+![Work in Progress](Temp_MediaDirectory/Summary.PNG)
 
 > > This repo contains source code of various projects available in the Python Developer Track of JetBrains Academy.
     Link to the Python Developer Track: https://hyperskill.org/tracks/2
