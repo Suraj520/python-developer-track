@@ -6,7 +6,7 @@ Personal finances are an important part of life. Sometimes you need some extra m
 
 This project works towards simulating a Loan Calculator for the end user which will help him in keeping a track of his personal finances. 
 ### Execute
-```$ cd Script && python main.py ```
+```$ cd src && python main.py ```
 
 #### About the software version
 This software version is capable of calculating one of the following provided the rest are being fed as an input to it alongwith some mandatory ones.

@@ -4,7 +4,7 @@
 ### About the Software version
 This simulates a simple console based chatbot where it asks the user for its name, guesses your age based on few other input parameters, asks for a multiple choice question and counts upto a number.
 ### Execute Command
-```cd Script && python main.py```
+```cd src && python main.py```
 ### ChatBot Session
 ```The similar prompt can be expected upon entering the same input as described below. User can however enter any choice to validate the working of the software as long as the input is in bounds of the software```
 

@@ -7,7 +7,7 @@ This project works towards simulating <a target="_blank" href="https://en.wikipe
 The end outcome of the game is either a win that let's the user survive or a lose where the user will be hanged!
 
 ### Execute
-```$ cd Script && python main.py ```
+```$ cd src && python main.py ```
 
 ### Rules of the game
 * This user gets 8 tries to iteratively predict the entire word or get hanged!

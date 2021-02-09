@@ -4,7 +4,7 @@
 ### About the Software version
 This simulates a zoo camera to the help local zoo look after its denizens.
 ### Execute Command
-```cd Script && python main.py```
+```cd src && python main.py```
 ### Software Session
 ```The similar prompt can be expected upon entering the same input as described below. User can however enter any choice to validate the working of the software as long as the input is in bounds of the software```
 

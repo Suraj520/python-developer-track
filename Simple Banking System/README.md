@@ -6,7 +6,7 @@ Everything goes digital these days, and so does money. Today, most people have c
 This project works towards simulating a Simple Banking System with a database to create a credit card, transfer funds and other basic operations.
 
 ### Execute
-```$ cd Script && python main.py ```
+```$ cd src && python main.py ```
 
 #### About the software version
 Assuming that the user is aware about the anatomy of <a href="https://www.creditcardinsider.com/learn/anatomy-of-a-credit-card/#:~:text=Visa%20cards%20%E2%80%93%20Begin%20with%20a,6%20and%20have%2016%20digits"> credit cards </a>.
