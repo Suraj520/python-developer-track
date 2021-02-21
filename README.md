@@ -15,5 +15,5 @@
 - <a href="https://github.com/Suraj520/Python_developer_track/tree/master/Numeric%20Matrix%20Processor"> Numeric Matrix Processor </a>
 - <a href="https://github.com/Suraj520/Python_developer_track/tree/master/Rock-Paper-Scissors"> Rock Paper Scissors </a>
 - <a href="https://github.com/Suraj520/Python_developer_track/tree/master/Text-Based%20browser"> Text-Based browser </a> 
--  <a href="https://github.com/Suraj520/Python_developer_track/tree/master/Text-Based%20browser"> Easy Rider Bus Company </a>
+-  <a href="https://github.com/Suraj520/Python_developer_track/tree/master/Easy%20Rider%20Bus%20Companyr"> Easy Rider Bus Company </a>
 
