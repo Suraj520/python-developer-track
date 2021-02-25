@@ -1,5 +1,4 @@
 # About the Repo
-![alt text](https://github.com/Suraj520/Python_developer_track/blob/master/Temp_MediaDirectory/Out.png)
 
 
 > > This repo contains source code of various projects available in the Python Developer Track of JetBrains Academy.
